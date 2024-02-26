@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Countries Search</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Countries Statistics</h1>
+    <br>
+    <input type="text" id="searchInput" placeholder="Search for a country...">
+    <button id="searchBtn">search</button>
+    <br>
+    <button id="getAllBtn">get all countries</button>
+
+    <div id="statisticsDiv">
+        <br>
+        <span>Total countries:</span> 
+            <span id="totalCountriesRes">0</span>
+            <br>
+        <span>Total Countries Population:</span> 
+            <span id="totalCountriesPopRes">0</span>
+            <br>
+        <span>Average Population:</span> 
+            <span id="averagePopRes">0</span>
+        <table class="table" id="countriesTable">
+            <thead>
+                <tr>
+                    <th>Country name</th>
+                    <th>Number of citizens</th>
+                </tr>
+            </thead>
+            <tbody id="countriesTableBody">
+
+            </tbody>
+        </table>
+        <br>
+        <table class="table" id="regionsTbale">
+            <thead id="regionsTableHead">
+                <tr>
+                    <th>Region</th>
+                    <th>Number Of Countries</th>
+                </tr>
+            </thead>
+            <tbody id="regionsTableBody">
+
+            </tbody>
+        </table>
+        <br>
+        <table class="table" id=currenciesTable">
+            <thead id="currenciesTableHead">
+                <tr>
+                    <th>Country</th>
+                    <th>Currency</th>
+                    <th>Number Of Countries who use it</th>
+                </tr>
+            </thead>
+            <tbody id="currenciesTableBody">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="code.js"></script>
+</html>
